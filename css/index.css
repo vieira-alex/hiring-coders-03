@@ -1,0 +1,133 @@
+header {
+    background: #BBBBBB;
+    /* tudo dentro do cabeçalho tem que ter os 20ox para cima e para baixo. Nada pode encostar na margem */
+    padding: 20px 0;
+}
+
+.header-caixa {
+    /* A caixa não pode ser estática e precisa ser levantada, por isso o relative */
+    position: relative;
+    width: 940px;
+    /* margem para cima e baixo igual a zero e para a esquerda e direta como auto */
+    margin: 0 auto;
+}
+
+/* menu de navegação do header */
+.header-nav {
+    /* posicionar o menu de navegação da página para iniciar de acordo com as coordenadas de top e right abaixo */
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+/* itens do menu de navegação */
+.header-nav li {
+    /* Alinha o menu um ao lado do outro */
+    display: inline;
+    /* Espaça o texto do menu em relação ao menu ao lado */
+    margin: 0 0 0 15px;
+}
+
+/* links do menu de navegação */
+.header-nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/* Se o mouse estiver por cima do link dentro do menu de navegação */
+.header-nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+/* Posso usar id em vez de class para propriedades que não irão se repetir */
+#main-banner {
+	width: 100%;
+}
+
+.main-caixa {
+	background: #CCCCCC;
+	padding: 30px 0;
+}
+
+.texto-centralizado {
+	text-align: center;
+}
+
+.main-caixa h2 {
+    padding: 20px 0;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.main-caixa p {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.main-caixa-nome-empresa {
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+}
+
+.main-caixa-missao {
+    font-style: italic;
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.main-caixa em {
+    font-style: italic;
+}
+
+#main-caixa-missao {
+	font-size: 20px;
+}
+
+em strong {
+	color: #FF0000;
+}
+
+.main-beneficios {
+	background: #FFFFFF;
+	padding: 18px;
+}
+
+.main-beneficios h3 {
+    /* Padding bottom e top */
+    padding: 15px 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.main-beneficios-lista {
+	/* travar a lista na mesma linha da imagem que vem logo na sequência */
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin-right: 15%;
+    /* estilo de bullet-point */
+    list-style-type: disc;
+    padding-left: 40px;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.main-beneficios-imagem {
+	width: 50%;
+}
+
+footer {
+    background: url("../img/home/bg.jpg");
+    padding: 40px 0;
+}
+
+.footer-copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
